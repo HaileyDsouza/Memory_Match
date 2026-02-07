@@ -1,0 +1,102 @@
+/* CSS for Memory Match and High Scores pages */
+
+/* ----Lab 3: Optional: Card Flip Animation---- */
+
+.card {
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.card.flipped {
+  transform: scale(1.05);
+}
+
+
+/* ----Lab 2: Common Page Elements + Styling---- */
+
+body {
+  background-color: #fff7fb;
+}
+
+
+/* ----2.2 Game Board Styling---- */
+
+#board {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ----2.3 Card Styling---- */
+
+#board .card {
+  aspect-ratio: 1 / 1;
+  background-color: #fdecef;
+  border: 2px solid #f5a6b8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#board .card-face {
+  font-size: 2.2rem;
+  visibility: hidden;
+}
+
+#board .card.flipped {
+  background-color: #fff5f8;
+}
+
+#board .card.flipped .card-face {
+  visibility: visible;
+}
+
+#board .card.matched {
+  background-color: #e6fff2;
+  border-color: #6d3ddc;
+}
+
+#board .card.matched .card-face {
+  visibility: visible;
+}
+
+#board .card.wrong {
+  background-color: #ffd6d6;
+  border-color: #ff8c8c;
+}
+
+
+/* ----2.4 Page Layout + Responsiveness---- */
+
+#message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #cc3366;
+}
+
+#message.win {
+  font-size: 2rem;
+  text-align: center;
+  padding: 12px;
+  background-color: #fff0f6;
+  border: 2px solid #f5a6b8;
+  border-radius: 12px;
+}
+
+/* make both buttons the same width even if Bulma changes */
+#btn-new-game,
+#btn-reset {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  #board {
+    gap: 10px;
+  }
+}

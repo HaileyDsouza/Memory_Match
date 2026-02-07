@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Match</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!----Lab 02: Bulma CSS---->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+
+  <!----Custom CSS---->
+  <link rel="stylesheet" href="../css/memory_match.css">
+
+  <!----Lab 03: Game script---->
+  <script defer src="../js/memory_match.js"></script>
+</head>
+
+<body>
+
+  <!-------------------------------------------------------------------------------->
+  <!----Lab 2: Common Page Elements + Styling---->
+
+  <!----2.1 Common Page Elements - Bulma Navigation Bar---->
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="memory_match.html">
+        <strong>Memory Match</strong>
+      </a>
+
+      <!----Burger menu icon for mobile layouts---->
+      <a
+        role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="memory_match.html">Play Game</a>
+        <a class="navbar-item" href="high_scores.html">High Scores</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <div class="container">
+
+      <!-------------------------------------------------------------------------------->
+      <!----Lab 1: The Basic User Interface---->
+
+      <!----1.A Title & Instructions---->
+      <h1 class="title">Memory Match</h1>
+      <p>
+        Flip two cards at a time. If they match, they stay revealed.
+        Match all pairs to win.
+      </p>
+
+      <!-------------------------------------------------------------------------------->
+      <!----Lab 2: Page Layout + Responsiveness---->
+
+      <div class="columns is-variable is-6 mt-5">
+
+        <!----Status + Buttons---->
+        <div class="column is-3">
+          <div class="box">
+            <h2 class="title is-5">Game Status</h2>
+
+            <!----1.B Status Panel---->
+            <div id="status-panel">
+              <p><strong>Moves:</strong> <span id="moves">0</span></p>
+              <p><strong>Matches:</strong> <span id="matches">0</span> / <span id="total-pairs">8</span></p>
+              <p><strong>Time:</strong> <span id="time">0</span> s</p>
+            </div>
+
+            <hr>
+
+            <!----1.C Controls---->
+            <button id="btn-new-game" class="button is-primary is-light is-fullwidth">
+              New Game
+            </button>
+
+            <button id="btn-reset" class="button is-link is-light is-fullwidth mt-2">
+              Reset (Same Board)
+            </button>
+          </div>
+        </div>
+
+        <!----Board + Message---->
+        <div class="column">
+
+          <!----1.E Message Area---->
+          <div id="message" class="mt-3"></div>
+
+          <div class="box">
+            <h2 class="title is-5">Board</h2>
+
+            <!----2.2 Game Board Styling---->
+            <!----2.3 Card Styling---->
+            <div id="board"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

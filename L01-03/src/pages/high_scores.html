@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>High Scores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!----Lab 02: Bulma CSS---->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  >
+
+  <!----Custom CSS---->
+  <link rel="stylesheet" href="../css/memory_match.css">
+
+  <!----Lab 03: High Scores Script---->
+  <script defer src="../js/high_scores.js"></script>
+</head>
+
+<body>
+
+  <!-------------------------------------------------------------------------------->
+  <!----Lab 2: Common Page Elements + Styling---->
+
+  <!----2.1 Common Page Elements (Bulma Navigation Bar)---->
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="memory_match.html">
+        <strong>Memory Match</strong>
+      </a>
+
+      <!----Burger menu icon for mobile layout---->
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="memory_match.html">Play Game</a>
+        <a class="navbar-item" href="high_scores.html">High Scores</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <div class="container">
+
+      <!-------------------------------------------------------------------------------->
+      <!----Lab 1: High Scores Page Layout---->
+
+      <!----2.A Page Title---->
+      <h1 class="title">High Scores</h1>
+
+      <!----2.B High Scores Table---->
+      <table id="scores-table" class="table is-fullwidth">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Moves</th>
+            <th>Time (s)</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+
+        <!----Lab 03: Filled by high_scores.js---->
+        <tbody id="scores-body"></tbody>
+      </table>
+
+    </div>
+  </main>
+
+</body>
+</html>
