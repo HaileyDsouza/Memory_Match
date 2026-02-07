@@ -1,4 +1,5 @@
 # Lab 01–03 — Memory Match (Starter Code)
+<img width="1888" height="833" alt="image" src="https://github.com/user-attachments/assets/3237301f-a698-4337-834a-0bcda70ba917" />
 
 This starter package supports Labs 01–03 for **CSCI3230U Web App Development**.
 
