@@ -6,6 +6,11 @@
 <img width="1031" height="824" alt="image" src="https://github.com/user-attachments/assets/3eeb190b-67ed-4aca-84ed-63e3e8e4e008" />
 <img width="1043" height="749" alt="image" src="https://github.com/user-attachments/assets/827c6210-5e69-4561-8b7d-470f5c2d56e2" />
 
+## Additional features
+I have decdided to add an animation when cards flip and let the player enter their name at the end of a completed game. 
+<img width="1037" height="888" alt="image" src="https://github.com/user-attachments/assets/8d51c09b-7ed7-4b3e-bbf4-ae0c9dcfd272" />
+<img width="1010" height="813" alt="image" src="https://github.com/user-attachments/assets/48902d90-d603-4776-93c9-bace7cc2939a" />
+
 This starter package supports Labs 01–03 for **CSCI3230U Web App Development**.
 
 You will build a two-page web app:
