@@ -2,6 +2,10 @@
 <img width="1887" height="858" alt="image" src="https://github.com/user-attachments/assets/52d50a20-ca2b-49b2-a75b-7e94aa099972" />
 <img width="1886" height="848" alt="image" src="https://github.com/user-attachments/assets/8a01b5ac-5600-4ac1-97b1-af42681d06e5" />
 
+## Mobile view 
+<img width="1031" height="824" alt="image" src="https://github.com/user-attachments/assets/3eeb190b-67ed-4aca-84ed-63e3e8e4e008" />
+<img width="1043" height="749" alt="image" src="https://github.com/user-attachments/assets/827c6210-5e69-4561-8b7d-470f5c2d56e2" />
+
 This starter package supports Labs 01–03 for **CSCI3230U Web App Development**.
 
 You will build a two-page web app:
