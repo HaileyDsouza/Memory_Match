@@ -1,4 +1,4 @@
-# Lab 01–03 — Memory Match (Starter Code)
+# Lab 1-3 — Memory Match by Hailey Dsouza 
 <img width="1887" height="858" alt="image" src="https://github.com/user-attachments/assets/52d50a20-ca2b-49b2-a75b-7e94aa099972" />
 <img width="1886" height="848" alt="image" src="https://github.com/user-attachments/assets/8a01b5ac-5600-4ac1-97b1-af42681d06e5" />
 
@@ -7,7 +7,8 @@
 <img width="1043" height="749" alt="image" src="https://github.com/user-attachments/assets/827c6210-5e69-4561-8b7d-470f5c2d56e2" />
 
 ## Additional features
-I have decdided to add an animation when cards flip and let the player enter their name at the end of a completed game. 
+### There is an animation when cards flip 
+### The player enters their name at the end of a completed game 
 
 
 <img width="1037" height="888" alt="image" src="https://github.com/user-attachments/assets/8d51c09b-7ed7-4b3e-bbf4-ae0c9dcfd272" />
@@ -15,12 +16,12 @@ I have decdided to add an animation when cards flip and let the player enter the
 
 This starter package supports Labs 01–03 for **CSCI3230U Web App Development**.
 
-You will build a two-page web app:
+I built a two-page web app:
 
 - `memory_match.html` — the game page
 - `high_scores.html` — the high scores page
 
-Over three labs you will add:
+Over three labs I added:
 
 - **Lab 01:** HTML structure and content
 - **Lab 02:** Styling with Bulma + custom CSS (responsive layout)
