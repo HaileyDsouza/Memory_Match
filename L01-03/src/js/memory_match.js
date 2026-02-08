@@ -53,7 +53,7 @@ function reset_stats() {
 }
 
 
-//----3.A Build the Board Dynamically and create the cards in JS----
+//----3.A Build the Board Dynamically and create the cards ----
 
 function build_board(shuffle_new) {
   const board = document.getElementById("board");
@@ -113,16 +113,19 @@ function handle_card_click(card) {
     lock_board = false;
 
     //----3.D Game Completion----
+    //----OPTIONAL - Let the player enter their name at the end of a completed game----
     if (match_count === total_pairs) {
       clearInterval(timer_id);
       timer_id = null;
 
-      const message_box = document.getElementById("message");
-      message_box.classList.add("win");
-      message_box.textContent =
-        "YAY, congrats you won :) " + move_count + " moves, " + elapsed_time + " seconds.";
-    }
+      let player_name = prompt("YIPPEE you won, Please enter your name:", "Player");
+      if (!player_name) player_name = "Player";
+      player_name = player_name.trim();
+      if (player_name.length === 0) player_name = "Player";
 
+      document.getElementById("message").textContent =
+        "Congrats " + player_name + " :) You won the game with " + move_count + " moves, " + elapsed_time + " seconds.";
+    }
     return;
   }
 
