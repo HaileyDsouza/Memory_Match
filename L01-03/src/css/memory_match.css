@@ -1,13 +1,13 @@
 /* CSS for Memory Match and High Scores pages */
 
-/* ----Lab 3: Optional: Card Flip Animation---- */
+/*---- OPTIONAL - Add an animation when cards flip---- */
 
-.card {
-  transition: transform 0.25s ease, background-color 0.25s ease;
+#board .card {
+  transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-.card.flipped {
-  transform: scale(1.05);
+#board .card.flipped {
+  transform: rotateY(15deg) scale(1.06);
 }
 
 
