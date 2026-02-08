@@ -5,7 +5,7 @@
   <title>High Scores</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!----Lab 02: Bulma CSS---->
+  <!----Lab 2: Bulma CSS---->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
@@ -14,14 +14,14 @@
   <!----Custom CSS---->
   <link rel="stylesheet" href="../css/memory_match.css">
 
-  <!----Lab 03: High Scores Script---->
+  <!----Lab 3: High Scores Script---->
   <script defer src="../js/high_scores.js"></script>
 </head>
 
 <body>
 
   <!-------------------------------------------------------------------------------->
-  <!----Lab 2: Common Page Elements + Styling---->
+  <!----Lab 2: Common Page Elements and Styling---->
 
   <!----2.1 Common Page Elements (Bulma Navigation Bar)---->
   <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
@@ -67,12 +67,25 @@
           </tr>
         </thead>
 
-        <!----Lab 03: Filled by high_scores.js---->
+        <!----Lab 3: Filled by high_scores.js---->
         <tbody id="scores-body"></tbody>
       </table>
 
     </div>
   </main>
+  <!----Lab 2: Mobile Navigation Toggle---->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const burger = document.querySelector(".navbar-burger");
+      const menu = document.querySelector(".navbar-menu");
 
+      if (burger && menu) {
+        burger.addEventListener("click", () => {
+          burger.classList.toggle("is-active");
+          menu.classList.toggle("is-active");
+        });
+      }
+    });
+  </script>
 </body>
 </html>
